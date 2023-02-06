@@ -1,3 +1,5 @@
+package src;
+
 public class SalesManager {
     protected int[] sales;
 
