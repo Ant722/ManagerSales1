@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int[] prices = {30, 5, 2};
+
+        new SalesManager(prices);
+
+        System.out.println("Hello GITHUB\n" + Arrays.stream(prices).max());
+    }
+}
