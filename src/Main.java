@@ -1,14 +1,15 @@
 package src;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 
-        int[] prices = {30, 5, 2};
+        SalesManager prices = new SalesManager(new int[]{30, 5, 2, 14, 8});
 
-        new SalesManager(prices);
 
-        System.out.println("Hello GITHUB\n" + Arrays.stream(prices).max());
+
+
+        System.out.println("Hello GITHUB\nСамая жирная продажа - " + prices.max());
+        System.out.println("Обрезанное среднее количество продаж - " + prices.croppedMiddl() + "\nМинимальная продажа - " + prices.min());
+
     }
 }
